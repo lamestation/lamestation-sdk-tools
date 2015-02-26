@@ -4,7 +4,7 @@ with open('README.rst') as f:
         long_description = f.read()
 
 setup(
-        name = "LameStation Tools",
+        name = "LameStationTools",
         version = "0.2.0",
         author = "LameStation",
         author_email = "contact@lamestation.com",
