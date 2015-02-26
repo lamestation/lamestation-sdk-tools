@@ -275,8 +275,6 @@ def displayResult(scale, oldimage, newimage):
 def console():
     parser = argparse.ArgumentParser(description='Convert images to Propeller Spin data blocks for use with Lame Graphics.')
 
-    parser.add_argument('-b','--bits', nargs=1, metavar=('BITS'), type=int, choices=[2,8],default=[2],
-            help="Bit depth of images.")
     parser.add_argument('-f','--framesize', nargs=2, metavar=('WIDTH','HEIGHT'), type=int,
             help="Size of individual sprite frames (only needed for sprites).")
     parser.add_argument('-d','--display', action='store_true',
