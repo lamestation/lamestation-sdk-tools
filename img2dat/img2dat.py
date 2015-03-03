@@ -286,8 +286,6 @@ def console():
 
     parser.add_argument('filenames', metavar='FILE', nargs='+', help='Files to convert')
     args = parser.parse_args()
-
-    args = getCommandLineArguments()
     filenames = files.cleanFilenames(args.filenames)
 
     if not filenames:
