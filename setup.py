@@ -19,6 +19,7 @@ setup(
             'bin/map2dat',
             'bin/frequencytiming',
             'bin/noise',
+            'bin/lscapture',
             ],
         entry_points={
             'console_scripts': [
