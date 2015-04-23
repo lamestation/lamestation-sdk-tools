@@ -50,6 +50,8 @@ def getObjects():
 
             output += "\nword\t\t"+str(totalobjects)+"\n"
 
+            conlist = []
+
             for og in object_data:
                 for o in og:
                     if 'name' in o.attrib:
@@ -57,6 +59,15 @@ def getObjects():
                                 +str(int(o.attrib['x'])/tilemap.tilew)+", "\
                                 +str(int(o.attrib['y'])/tilemap.tilew)+", "\
                                 +o.attrib['name']
+                        if not o.attrib['name'] in conlist:
+                            conlist.append(o.attrib['name'])
+
+            output += "\n\nCON\n    #0"
+            
+            for i in conlist:
+                output += ", "+i
+
+            output += "\n\n"
     return output
 
 
@@ -248,7 +259,7 @@ for filename in args.filenames:
         raise Exception("Tilemap "+fullpath_tilemap_name+" not found!")
 
     if not oldtilemap_name == tilemap.name:
-        arguments = [os.path.join(files.getScriptDir(),"img2dat")]
+        arguments = ["img2dat"]
 
         if args.write:
             arguments.append("--write")
