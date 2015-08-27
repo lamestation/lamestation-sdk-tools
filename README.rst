@@ -27,8 +27,3 @@ The LameStation toolkit requires the following dependencies:
 -  `Python 2.7 <https://www.python.org/>`__
 -  `Python Imaging Library <http://www.pythonware.com/products/pil/>`__
 -  `wxPython <http://www.wxpython.org/download.php>`__
-
-Usage
-=====
-
-For more on usage, see the LameStation Tools space at: https://lamestation.atlassian.net/wiki/display/LSTOOLS/
